@@ -1,0 +1,39 @@
+* {
+    font-family: sans-serif;
+    background-color: darkseagreen;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1 {
+    font-size: 100px;
+    color: white;
+}
+
+h2 {
+    font-size: 36px;
+    color: white;
+}
+
+h3 {
+    font-size: 24px;
+    color: black;
+}
+
+#inicio {
+    text-align: center;
+    padding: 20px;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+#map {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
