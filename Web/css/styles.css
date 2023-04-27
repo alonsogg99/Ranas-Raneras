@@ -14,11 +14,13 @@ h1 {
 h2 {
     font-size: 36px;
     color: white;
+        margin: 50px;
 }
 
 h3 {
     font-size: 24px;
     color: black;
+    margin: 50px;
 }
 
 #inicio {
@@ -53,4 +55,9 @@ nav ul {
 .team-item {
     margin: 50px;
     width: 25vh;
+}
+
+.team-name{
+    display: flex;
+    justify-content: center;
 }
