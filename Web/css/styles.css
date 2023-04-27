@@ -14,7 +14,7 @@ h1 {
 h2 {
     font-size: 36px;
     color: white;
-        margin: 50px;
+    margin: 50px;
 }
 
 h3 {
@@ -57,7 +57,7 @@ nav ul {
     width: 25vh;
 }
 
-.team-name{
+.team-name {
     display: flex;
     justify-content: center;
 }
