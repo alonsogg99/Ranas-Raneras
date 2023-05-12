@@ -1,7 +1,8 @@
 * {
-    font-family: Helvetica Neue, sans-serif;
+    font-family: 'PT Sans', sans-serif;
     background-color: #267E66;
     color: #172A4C;
+    font-size:18px;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -10,14 +11,16 @@
 h1 {
     display: flex;
     font-size: 100px;
-    color: EEEEEE;
+    font-family: 'Suez One', serif;
+    color: #EEEEEE;
     justify-content: center;
 }
 
 h2 {
     display: flex;
     font-size: 36px;
-    color: EEEEEE;
+    font-family: 'Suez One', serif;
+    color: #EEEEEE;
     margin: 50px;
     justify-content: center;
 }
@@ -25,14 +28,19 @@ h2 {
 h3 {
     display: flex;
     font-size: 24px;
+    font-family: 'Suez One', serif;
+    color: #EEEEEE;
     margin: 50px;
     justify-content: center;
 }
 
-#map {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+#video-header {}
+
+#video {
+    right: 0;
+    top: 0;
+    min-width: 100%;
+    min-height: 100%;
 }
 
 #contact {
@@ -47,11 +55,11 @@ h3 {
     justify-content: center;
 }
 
-.team-member{
+.team-member {
     margin: 45px;
 }
 
-.team-item {
+.team-item-alonso {
     width: 25vh;
     height: 25vh;
     border-radius: 50%;
@@ -60,8 +68,93 @@ h3 {
     background-size: cover;
 }
 
-.team-item:hover {
+.team-item-alonso:hover {
     background-image: url(../media/img/frogs/HalonFrog.png);
+    transition: 0.5s ease;
+}
+
+.team-item-alicia {
+    width: 25vh;
+    height: 25vh;
+    border-radius: 50%;
+    background-image: url(../media/img/pics/alicia.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.team-item-alicia:hover {
+    background-image: url(../media/img/frogs/AliFrog.png);
+    transition: 0.5s ease;
+}
+
+.team-item-andres {
+    width: 25vh;
+    height: 25vh;
+    border-radius: 50%;
+    background-image: url(../media/img/pics/ragot.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.team-item-andres:hover {
+    background-image: url(../media/img/frogs/RagotFrog.png);
+    transition: 0.5s ease;
+}
+
+.team-item-victor {
+    width: 25vh;
+    height: 25vh;
+    border-radius: 50%;
+    background-image: url(../media/img/pics/victor.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.team-item-victor:hover {
+    background-image: url(../media/img/frogs/VitiFrog.png);
+    transition: 0.5s ease;
+}
+
+.team-item-carmen {
+    width: 25vh;
+    height: 25vh;
+    border-radius: 50%;
+    background-image: url(../media/img/pics/carmen.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.team-item-carmen:hover {
+    background-image: url(../media/img/frogs/ComfyFrog.png);
+    transition: 0.5s ease;
+}
+
+.team-item-lino {
+    width: 25vh;
+    height: 25vh;
+    border-radius: 50%;
+    background-image: url(../media/img/pics/lino.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.team-item-lino:hover {
+    background-image: url(../media/img/frogs/LinoFrog.png);
+    transition: 0.5s ease;
+}
+
+.team-item-jose {
+    width: 25vh;
+    height: 25vh;
+    border-radius: 50%;
+    background-image: url(../media/img/pics/jose.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.team-item-jose:hover {
+    background-image: url(../media/img/frogs/AyiyiFrog.png);
+    transition: 0.5s ease;
 }
 
 .team-name {
@@ -70,7 +163,7 @@ h3 {
     font-size: 25px;
 }
 
-.team-role{
+.team-role {
     display: flex;
     justify-content: center;
     color: darkgray;
@@ -134,19 +227,19 @@ nav li a:hover {
 
 .galeria-img {
     margin: 2vh;
-    width: 48vh; 
+    width: 48vh;
 }
 
-#video-header{
-    
+#carrousel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 2vh;
 }
 
-#video{
-    position: 
-    right: 0;
-    top: 0;
-    min-width: 100%;
-    min-height: 100%;
+.carrousel-item {
+    margin 2vh;
+    width: 48%;
 }
 
 #frog-icons {
@@ -156,6 +249,6 @@ nav li a:hover {
 }
 
 .frog-item {
-    margin: 10px;
+    margin: 15px;
     width: 5vh;
 }
