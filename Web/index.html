@@ -10,31 +10,31 @@
 </head>
 
 <body>
-    <header>
-        <div id="header">
-            <div id="inicio-header">
-                <h1>Ranas Insanas</h1>
-            </div>
-            <div id="video-header">
-                <video src="media/vid/placeholder_1920x1080.mp4" width=40%></video>
-            </div>
+    <section class = "header">
+        <div id ="text-header">
+           <h1>Ranas Insanas</h1>
         </div>
-        <div id="menu">
-            <nav>
-                <ul>
-                    <li>
-                        <a href="#galeria">Galeria</a>
-                    </li>
-                    <li>
-                        <a href="#juego">El juego</a>
-                    </li>
-                    <li>
-                        <a href="#contacto">Contacto</a>
-                    </li>
-                </ul>
-            </nav>
+        <div id ="video-header">
+            <video autoplay muted loop id = "video">
+                <source src="media/vid/placeholder_1920x1080.mp4" type ="video/mp4">
+            </video>
         </div>
-    </header>
+    </section>
+    <section id="menu">
+        <nav>
+            <ul>
+                <li>
+                    <a href="#galeria">Galeria</a>
+                </li>
+                <li>
+                    <a href="#juego">El juego</a>
+                </li>
+                <li>
+                     <a href="#contacto">Contacto</a>
+                </li>
+            </ul>
+        </nav>
+    </section>
 
     <section id="Galeria">
         <header>
@@ -75,33 +75,42 @@
             <div id="equipo">
                 <h3>Nuestro equipo</h3>
                 <div id="team-container">
-                    <div>
-                        <img class="team-item" src="media/img/1000.png">
-                        <p class="team-name">Nombre del miembro del equipo</p>
+                    <div class="team-member">
+                        <div class="team-item"></div>
+<!--                        <img class="team-item" src="media/img/pics/alonso.png">-->
+                        <p class="team-name">Alonso García</p>
+                        <p class="team-role">Lead Designer</p>
                     </div>
-                    <div>
-                        <img class="team-item" src="media/img/1000.png">
-                        <p class="team-name">Nombre del miembro del equipo</p>
+                    <div class="team-member">
+                        <img class="team-item" src="media/img/pics/ragot.jpg">
+                        <p class="team-name">Andrés Ragot</p>
+                        <p class="team-role">Lead Programer and Producer</p>
                     </div>
-                    <div>
-                        <img class="team-item" src="media/img/1000.png">
-                        <p class="team-name">Nombre del miembro del equipo</p>
+                    <div class="team-member">
+                        <img class="team-item" src="media/img/pics/victor.jpg">
+                        <p class="team-name">Victor del Campo</p>
+                        <p class="team-role">Environment and Prop Artist</p>
                     </div>
-                    <div>
-                        <img class="team-item" src="media/img/1000.png">
-                        <p class="team-name">Nombre del miembro del equipo</p>
+
+                    <div class="team-member">
+                        <img class="team-item" src="media/img/pics/carmen.jpg">
+                        <p class="team-name">Carmen Pastrana</p>
+                        <p class="team-role">Character Artist</p>
                     </div>
-                    <div>
-                        <img class="team-item" src="media/img/1000.png">
-                        <p class="team-name">Nombre del miembro del equipo</p>
+                    <div class="team-member">
+                        <img class="team-item" src="media/img/pics/jose.jpg">
+                        <p class="team-name">Jose Salvatierra</p>
+                        <p class="team-role">Environment Artist</p>
                     </div>
-                    <div>
-                        <img class="team-item" src="media/img/1000.png">
-                        <p class="team-name">Nombre del miembro del equipo</p>
+                    <div class="team-member">
+                        <img class="team-item" src="media/img/pics/lino.jpg">
+                        <p class="team-name">Lino Andreoli</p>
+                        <p class="team-role">Programmer</p>
                     </div>
-                    <div>
-                        <img class="team-item" src="media/img/1000.png">
-                        <p class="team-name">Nombre del miembro del equipo</p>
+                    <div class="team-member">
+                        <img class="team-item" src="media/img/pics/alicia.jpg">
+                        <p class="team-name">Alicia Touris</p>
+                        <p class="team-role">Programmer</p>
                     </div>
                 </div>
             </div>
@@ -123,14 +132,32 @@
                     <input type="submit" value="Enviar">
                 </form>
             </section>
-            <section id="map">
-                <h3>UDIT</h3>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12143.27749814479!2d-3.6674947!3d40.4571346!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd42292a2a67e76f%3A0x7661d685faad2ff8!2sESNE%20-%20Escuela%20Universitaria%20de%20Dise%C3%B1o%2C%20Innovaci%C3%B3n%20y%20Tecnolog%C3%ADa!5e0!3m2!1ses!2ses!4v1682448525260!5m2!1ses!2ses" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </section>
         </div>
 
     </section>
-
+    <div id ="frog-icons">
+        <div>
+            <img class="frog-item" src="media/img/frogs/AliFrog.png">
+        </div>
+        <div>
+            <img class="frog-item" src="media/img/frogs/AyiyiFrog.png">
+        </div>
+        <div>
+            <img class="frog-item" src="media/img/frogs/HalonFrog.png">
+        </div>
+        <div>
+            <img class="frog-item" src="media/img/frogs/RagotFrog.png">
+        </div>
+        <div>
+            <img class="frog-item" src="media/img/frogs/ComfyFrog.png">
+        </div>
+        <div>
+            <img class="frog-item" src="media/img/frogs/VitiFrog.png">
+        </div>
+        <div>
+            <img class="frog-item" src="media/img/frogs/LinoFrog.png">
+        </div>
+    </div>
     <div id="footer">
         <a href="#inicio">Volver al inicio</a>
     </div>
