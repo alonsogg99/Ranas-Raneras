@@ -36,10 +36,13 @@ h3 {
     justify-content: center;
 }
 
-#video {
+iframe {
     left: 0;
     top: 0;
-    width: 100%;
+    width: auto;
+    height: auto;
+    min-width: 100%;
+    min-height: 100%;
 }
 
 #video-header {
@@ -49,14 +52,13 @@ h3 {
 }
 
 #video-header > img {
-    z-index: 50000000;
+    z-index: 2;
     position: absolute;
     width: 50%;
     bottom: 150px;
     left: 380px;
     background-color: transparent;
 }
-
 
 #team-container {
     display: flex;
@@ -67,7 +69,7 @@ h3 {
 
 .team-member {
     margin: 0 auto;
-    padding: 1rem 3%;
+    padding: 1rem 4%;
     align-self: center;
 }
 
@@ -180,40 +182,40 @@ h3 {
     display: flex;
     justify-content: center;
     font-size: 25px;
+    color: black;
 }
 
 .team-role {
     display: flex;
     justify-content: center;
-    color: darkgray;
+    color: black;
     font-size: 20px;
 }
 
 #menu {
-    width: auto;
+    width: 100%;
     font-size: 25px;
     position: sticky;
     top: 0;
-    z-index: 1;
+    z-index: 3;
+    background-color: #C574D9;
 }
 
-nav ul {
+nav > ul {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
     list-style: none;
-    margin: 0;
     padding: 0;
     background-color: #C574D9;
     height: 3em;
-
 }
 
-nav li {
+nav > ul > li {
     display: inline-block;
 }
 
-nav li a {
+nav > ul > li > a {
     font-size: 24px;
     font-family: 'Suez One', serif;
     color: #EEEEEE;
@@ -222,7 +224,20 @@ nav li a {
     color: #fff;
     text-decoration: none;
     background-color: #C574D9;
+}
 
+nav > ul > li:first-child {
+    display: none;
+    color: white;
+}
+
+nav > ul > li > i {
+    color: #EEEEEE;
+    display: block;
+    padding: 11px 15px;
+    color: #fff;
+    text-decoration: none;
+    background-color: #C574D9;
 }
 
 nav li a:hover {
@@ -231,10 +246,7 @@ nav li a:hover {
 
 #Galeria {
     padding: 7vh;
-    background-color: #267E66;
 }
-
-
 
 #conocenos {
     min-height: 100vh;
@@ -280,12 +292,12 @@ nav li a:hover {
 .galeria-text > p {
     font-size: 25px;
     margin: 40px;
+    color: white;
 }
 
 .galeria-text > h3 {
     justify-content: flex-start;
     font-size: 30px;
-    margin: 40px;
 }
 
 #juego {
@@ -304,7 +316,8 @@ nav li a:hover {
 
 #juego > header > h2 {
     background-color: #63C64D;
-    padding: 7vh
+    padding: 7vh;
+    color: #172A4C;
 }
 
 #carrousel {
@@ -312,7 +325,7 @@ nav li a:hover {
     margin: auto;
     overflow: hidden;
 
-    width: 1 00%;
+    width: 100%;
     max-width: 1000px;
 
 }
@@ -339,7 +352,6 @@ nav li a:hover {
     padding: 1rem, 10%;
     background-color: #63C64D;
 }
-
 
 .frog-item {
     margin: 15px;
@@ -398,7 +410,6 @@ nav li a:hover {
 #wrapper-contacto {
     width: 1080px;
     background-color: #63C64D;
-
 }
 
 #contacto-for {
@@ -460,7 +471,6 @@ input[type="submit"] {
     color: white;
 }
 
-
 @keyframes slider {
     0% {
         left: 0;
@@ -509,5 +519,190 @@ input[type="submit"] {
 
     100% {
         left: 0;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    section {
+        min-height: auto;
+        width: 100%
+    }
+
+    iframe {}
+
+    .header {
+        overflow: hidden;
+        height: 40vh;
+        width: 95;
+    }
+
+    #video-header > img {
+        width: 40%;
+        bottom: 0px;
+        left: 130px;
+        top: 80px;
+    }
+
+    #video-header {
+        top: 1rem;
+        left: -20px;
+        width: 110%;
+        height: 100%;
+    }
+
+    #menu {
+        height: 1rem;
+        position: fixed;
+        top: 0;
+    }
+
+    nav > ul {
+        height: 2rem;
+    }
+
+    #menu > ul > li:first-child {
+        display: block;
+        right: 0;
+        background-color: #C574D9;
+        margin-left: auto;
+        margin-right: 1rem;
+        margin-top: 0.3rem;
+    }
+
+    #menu > ul > li:not(:first-child) {
+        display: none;
+    }
+
+    #menu > ul:hover {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #menu > ul:hover > li:not(:first-child) {
+        display: block;
+
+    }
+
+    nav > ul > li > a {
+        font-size: 10px;
+    }
+
+    .galeria-item-right,
+    .galeria-item-left {
+        flex-direction: column;
+    }
+
+    h2 {
+        font-size: 30px;
+        text-align: center;
+        width: 100%;
+        margin: 0;
+    }
+
+    h3 {
+        display: block;
+        margin: auto;
+        font-size: 4px;
+        text-align: center;
+    }
+
+    #wrapper-contacto {
+        display: flex;
+        flex-flow: column;
+        width: 100%;
+    }
+
+    #formulario {
+        float: none;
+        display: block;
+        margin: auto;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    #contacto-for {
+        float: none;
+    }
+
+    .galeria-text > p {
+        margin: 0;
+        right: 0;
+        font-size: 20px;
+    }
+
+    #Galeria {
+        display: block;
+        margin: auto;
+        padding: 0;
+        align-content: center;
+        width: 90%;
+    }
+
+    #galeria-container {
+        padding: 0;
+    }
+
+    #Galeria > header > h2 {
+        padding-top: 3vh;
+        font-size: 25px;
+    }
+
+    .galeria-text > h3 {
+        font-size: 25px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .galeria-text > p {
+        font-size: 20px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        text-align: center;
+    }
+
+
+    .galeria-img {
+        display: block;
+        margin: auto;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        width: 90%;
+    }
+
+    #juego {
+        padding: 0;
+        margin: 0;
+    }
+
+    #carrousel {
+        width: 90%;
+    }
+
+    #footer {
+        position: fixed;
+        bottom: 0;
+        display: block;
+        margin: auto;
+    }
+
+    #contacto-for > h3 {
+        font-size: 20px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    #contacto {
+        width: 100%;
+        min-height: initial;
+        height: auto;
+    }
+
+    #conocenos {
+        min-height: initial;
+        height: auto;
+    }
+
+    #frog-icons {
+        margin-bottom: 3rem;
     }
 }
