@@ -57,22 +57,18 @@ h3 {
     background-color: transparent;
 }
 
-#contacto {
-    height: calc(100vh - 3em);
-
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-}
 
 #team-container {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-around;
+    align-items: center;
 }
 
 .team-member {
-    margin: 45px;
+    margin: 0 auto;
+    padding: 1rem 3%;
+    align-self: center;
 }
 
 .team-item-alonso {
@@ -82,6 +78,7 @@ h3 {
     background-image: url(../media/img/pics/alonso.png);
     background-position: center;
     background-size: cover;
+
 }
 
 .team-item-alonso:hover {
@@ -110,6 +107,8 @@ h3 {
     background-image: url(../media/img/pics/ragot.jpg);
     background-position: center;
     background-size: cover;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .team-item-andres:hover {
@@ -124,6 +123,8 @@ h3 {
     background-image: url(../media/img/pics/victor.jpg);
     background-position: center;
     background-size: cover;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .team-item-victor:hover {
@@ -138,6 +139,7 @@ h3 {
     background-image: url(../media/img/pics/carmen.jpg);
     background-position: center;
     background-size: cover;
+
 }
 
 .team-item-carmen:hover {
@@ -166,6 +168,7 @@ h3 {
     background-image: url(../media/img/pics/jose.jpg);
     background-position: center;
     background-size: cover;
+
 }
 
 .team-item-jose:hover {
@@ -234,6 +237,7 @@ nav li a:hover {
 
 
 #conocenos {
+    min-height: 100vh;
     height: calc(100vh - 3em);
     background-color: #267E66;
     padding: 6vh;
@@ -328,28 +332,134 @@ nav li a:hover {
     vertical-align: middle;
 }
 
-#contacto {
-    align-items: center;
-    display: flex;
-    flex-direction: row;
-}
-
 #frog-icons {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    padding: 5vh;
+    padding: 1rem, 10%;
+    background-color: #63C64D;
 }
+
 
 .frog-item {
     margin: 15px;
-    width: 5vh;
+    width: 10vh;
+    border-radius: 50%;
+    background-color: gray;
 }
-
 
 #footer {
+    display: flex;
+    width: 100%;
     bottom: 0;
+    background-color: #C574D9;
+    align-items: flex-end;
+    position: relative;
+    align-content: center;
 }
+
+#footer > img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    background-color: transparent;
+    height: 3em;
+    bottom 0;
+    vertical-align: middle;
+}
+
+#contacto > h2 {
+    background-color: #63C64D;
+    padding-top: 7vh;
+    padding-bottom: 0;
+    color: #172A4C;
+    font-size: 50px;
+}
+
+#contacto > h3 {
+    background-color: #63C64D;
+    padding-top: 0;
+    margin: 0;
+    color: #172A4C;
+    font-size: 40px;
+}
+
+#contacto {
+    min-height: 100vh;
+    align-items: center;
+    flex-direction: column;
+    background-color: #63C64D;
+    height: calc(100vh - 9em);
+    display: flex;
+    justify-content: space-around;
+}
+
+#wrapper-contacto {
+    width: 1080px;
+    background-color: #63C64D;
+
+}
+
+#contacto-for {
+    background-color: #63C64D;
+    display: flex;
+    flex-direction: column;
+    float: left;
+    padding: 1rem, 10%;
+    text-align: center;
+    height: 50vh;
+    justify-content: space-around;
+}
+
+#contacto-for > p {
+    background-color: #63C64D;
+    font-size: 20px;
+
+}
+
+#contacto-for > a {
+    background-color: #63C64D;
+}
+
+#contacto-for > h3 {
+    background-color: #63C64D;
+    font-size: 30px;
+    color: #172A4C;
+}
+
+#formulario {
+    background-color: #63C64D;
+    float: right;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    padding: 1vh;
+    height: 50vh;
+    width: 50vh;
+}
+
+input,
+textarea {
+    background-color: lightgray;
+    margin: 1vh;
+    height: 12%;
+}
+
+textarea {
+    height: 35%;
+}
+
+input[type="submit"] {
+    background-color: gray;
+    width: 50%;
+    height: 9%;
+    color: white;
+}
+
 
 @keyframes slider {
     0% {
